@@ -2,7 +2,7 @@ const {Account} = require('../../db.js');
 
 module.exports = async (req, res) => {
 
-    const { email, state, date } = req.body;
+    const { email, state, date, password } = req.body;
 
     // let fecha = new Date().toLocaleString('en-US', {timeZone: 'America/Caracas'})
 
@@ -12,6 +12,7 @@ module.exports = async (req, res) => {
             email,
             state,
             date,
+            password,
             cobrada: 0,
             banned: false
         })

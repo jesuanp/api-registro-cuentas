@@ -8,6 +8,9 @@ module.exports = (sequelize) => {
           allowNull: false,
           unique: true
         },
+        password: {
+          type: DataTypes.STRING,
+        },
         state: {
             type: DataTypes.STRING,
             allowNull: false
