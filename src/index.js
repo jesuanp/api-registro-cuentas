@@ -27,5 +27,5 @@ app.use(routes);
 
 app.listen(3001, () => {
     console.log('server on port 3001');
-    db.sync({force: false});
+    db.sync({force: true});
 });
