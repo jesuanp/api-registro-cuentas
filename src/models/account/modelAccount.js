@@ -26,6 +26,18 @@ module.exports = (sequelize) => {
         banned: {
           type: DataTypes.BOOLEAN,
           allowNull: false
+        },
+        description: {
+          type: DataTypes.TEXT
+        },
+        lastSurveyDone: {
+          type: DataTypes.STRING
+        },
+        zipCode: {
+          type: DataTypes.STRING
+        },
+        money: {
+          type: DataTypes.STRING
         }
       }, {
         timestamps: false,
